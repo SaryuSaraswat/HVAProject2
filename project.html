@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form </title>
+    <link rel="stylesheet" href="project.css"/>
+ </head>
+
+ <body>
+  
+  <div class="container">
+     <h1>Registeration Form</h1>
+   
+      <form >
+          <fieldset>
+            <label for="first-name">Enter Your First Name:
+              <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name:
+              <input id="last-name" name="last-name" type="text" required /></label>
+              <label for="email">Enter Your Email: 
+              <input id="email" name="email" type="email" required /></label>
+          </fieldset>
+
+          <fieldset>
+            <label id="gender" name="gender-type" class="inline">Gender</label>
+            <label for="male">
+                <input id="male" type="radio" name="gender-type" class="inline" /> Male</label>
+            <label for="female">
+                <input id="female" type="radio" name="gender-type" class="inline" /> Female</label>
+          </fieldset>
+          
+          <fieldset>
+            <p>Date Of Birth<input id="birth" name="birth" type="text" required /></p>
+          </fieldset>
+
+          <fieldset>
+            <label>Education<input id="education" name="education" type="education" required /></label>
+            <label for="referrer">Branch
+                <select id="referrer" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Computer Science Engineering</option>
+                  <option value="2">Electrical Engineering</option>
+                  <option value="3">Mechanical Engineering</option>
+                  <option value="4">Chemical Engineering</option>
+               </select>
+             </label>
+          </fieldset>
+
+          <fieldset>
+          <label for="profile-picture">Upload a profile picture: 
+            <input id="profile-picture" type="file" name="file" /></label>
+            </fieldset>
+         <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
